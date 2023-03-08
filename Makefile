@@ -7,7 +7,7 @@ LDFLAGS = -fsanitize=address
 OBJ_DIR = obj/
 SRC_DIR = src/
 
-SRC_FILES = main.cpp
+SRC_FILES = commands.cpp main.cpp msg.cpp replies_generator.cpp user.cpp
 
 SRC = $(addprefix $(SRC_DIR), $(SRC_FILES))
 OBJ = $(patsubst $(SRC_DIR)%, $(OBJ_DIR)%, $(SRC:.cpp=.o))
